@@ -3,7 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\plusf\\Desktop\\gp5\\Program\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BE44A76B-F68A-4FDD-A527-780A9A9E75F6}|..\\Class 1th (Time Comlexity \u0026 Space Complexity)\\Class 1th (Time Comlexity \u0026 Space Complexity).vcxproj|C:\\Users\\plusf\\Desktop\\gp5\\Class 1th (Time Comlexity \u0026 Space Complexity)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{80176E2A-635A-42FF-AE6F-A2280B1607B3}|..\\Class3th (Bubble Sort)\\Class3th (Bubble Sort).vcxproj|C:\\Users\\plusf\\Desktop\\gp5\\Class3th (Bubble Sort)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98A09534-7BE8-450D-A012-0A3BB84BB621}|..\\Class2th (Brute Force)\\Class2th (Brute Force).vcxproj|C:\\Users\\plusf\\Desktop\\gp5\\Class2th (Brute Force)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93358822-8684-4518-B3A5-B64E0DFBA9C9}|Program.vcxproj|C:\\Users\\plusf\\Desktop\\gp5\\Program\\Program.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{93358822-8684-4518-B3A5-B64E0DFBA9C9}|Program.vcxproj|solutionrelative:Program.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -13,19 +20,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cpp",
+              "DocumentMoniker": "C:\\Users\\plusf\\Desktop\\gp5\\Program\\Program.cpp",
+              "RelativeDocumentMoniker": "Program.cpp",
+              "ToolTip": "C:\\Users\\plusf\\Desktop\\gp5\\Program\\Program.cpp",
+              "RelativeToolTip": "Program.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-14T09:35:44.354Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Source.cpp",
-              "DocumentMoniker": "C:\\Users\\plusf\\Desktop\\gp5\\Class 1th (Time Comlexity \u0026 Space Complexity)\\Source.cpp",
-              "RelativeDocumentMoniker": "..\\Class 1th (Time Comlexity \u0026 Space Complexity)\\Source.cpp",
-              "ToolTip": "C:\\Users\\plusf\\Desktop\\gp5\\Class 1th (Time Comlexity \u0026 Space Complexity)\\Source.cpp",
-              "RelativeToolTip": "..\\Class 1th (Time Comlexity \u0026 Space Complexity)\\Source.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAKAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\plusf\\Desktop\\gp5\\Class3th (Bubble Sort)\\Source.cpp",
+              "RelativeDocumentMoniker": "..\\Class3th (Bubble Sort)\\Source.cpp",
+              "ToolTip": "C:\\Users\\plusf\\Desktop\\gp5\\Class3th (Bubble Sort)\\Source.cpp",
+              "RelativeToolTip": "..\\Class3th (Bubble Sort)\\Source.cpp",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAADIAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-13T09:47:14.503Z",
+              "WhenOpened": "2025-03-14T09:35:38.566Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Source.cpp",
+              "DocumentMoniker": "C:\\Users\\plusf\\Desktop\\gp5\\Class2th (Brute Force)\\Source.cpp",
+              "RelativeDocumentMoniker": "..\\Class2th (Brute Force)\\Source.cpp",
+              "ToolTip": "C:\\Users\\plusf\\Desktop\\gp5\\Class2th (Brute Force)\\Source.cpp",
+              "RelativeToolTip": "..\\Class2th (Brute Force)\\Source.cpp",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAqwCoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-14T09:03:10.332Z",
               "EditorCaption": ""
             }
           ]
