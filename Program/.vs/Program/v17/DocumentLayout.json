@@ -3,17 +3,23 @@
   "WorkspaceRootPath": "C:\\Users\\plusf\\Desktop\\gp5\\Program\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{925AE2D8-CD14-4A5E-959A-A958DD2F906C}|..\\Class6th(Euclid)\\Class6th(Euclid).vcxproj|C:\\Users\\plusf\\Desktop\\gp5\\Class6th(Euclid)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27A7B6E1-3B92-4DB6-A07D-B5C451E86258}|..\\Class5th (insert Sort)\\Class5th (insert Sort).vcxproj|C:\\Users\\plusf\\Desktop\\gp5\\Class5th (insert Sort)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{591B581E-9A8B-45E0-8E2D-2D369CE935C2}|..\\Class4th (Select Sort)\\Class4th (Select Sort).vcxproj|C:\\Users\\plusf\\Desktop\\gp5\\Class4th (Select Sort)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93358822-8684-4518-B3A5-B64E0DFBA9C9}|Program.vcxproj|C:\\Users\\plusf\\Desktop\\gp5\\Program\\Program.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{93358822-8684-4518-B3A5-B64E0DFBA9C9}|Program.vcxproj|solutionrelative:Program.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{80176E2A-635A-42FF-AE6F-A2280B1607B3}|..\\Class3th (Bubble Sort)\\Class3th (Bubble Sort).vcxproj|C:\\Users\\plusf\\Desktop\\gp5\\Class3th (Bubble Sort)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{98A09534-7BE8-450D-A012-0A3BB84BB621}|..\\Class2th (Brute Force)\\Class2th (Brute Force).vcxproj|C:\\Users\\plusf\\Desktop\\gp5\\Class2th (Brute Force)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{93358822-8684-4518-B3A5-B64E0DFBA9C9}|Program.vcxproj|C:\\Users\\plusf\\Desktop\\gp5\\Program\\Program.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{93358822-8684-4518-B3A5-B64E0DFBA9C9}|Program.vcxproj|solutionrelative:Program.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -29,11 +35,37 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Source.cpp",
+              "DocumentMoniker": "C:\\Users\\plusf\\Desktop\\gp5\\Class6th(Euclid)\\Source.cpp",
+              "RelativeDocumentMoniker": "..\\Class6th(Euclid)\\Source.cpp",
+              "ToolTip": "C:\\Users\\plusf\\Desktop\\gp5\\Class6th(Euclid)\\Source.cpp",
+              "RelativeToolTip": "..\\Class6th(Euclid)\\Source.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-17T10:38:49.034Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Source.cpp",
+              "DocumentMoniker": "C:\\Users\\plusf\\Desktop\\gp5\\Class5th (insert Sort)\\Source.cpp",
+              "RelativeDocumentMoniker": "..\\Class5th (insert Sort)\\Source.cpp",
+              "ToolTip": "C:\\Users\\plusf\\Desktop\\gp5\\Class5th (insert Sort)\\Source.cpp",
+              "RelativeToolTip": "..\\Class5th (insert Sort)\\Source.cpp",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-17T09:14:04.327Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Source.cpp",
               "DocumentMoniker": "C:\\Users\\plusf\\Desktop\\gp5\\Class4th (Select Sort)\\Source.cpp",
               "RelativeDocumentMoniker": "..\\Class4th (Select Sort)\\Source.cpp",
               "ToolTip": "C:\\Users\\plusf\\Desktop\\gp5\\Class4th (Select Sort)\\Source.cpp",
               "RelativeToolTip": "..\\Class4th (Select Sort)\\Source.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAADEAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-03-14T10:20:50.743Z",
               "EditorCaption": ""
@@ -53,7 +85,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Source.cpp",
               "DocumentMoniker": "C:\\Users\\plusf\\Desktop\\gp5\\Class3th (Bubble Sort)\\Source.cpp",
               "RelativeDocumentMoniker": "..\\Class3th (Bubble Sort)\\Source.cpp",
@@ -61,12 +93,11 @@
               "RelativeToolTip": "..\\Class3th (Bubble Sort)\\Source.cpp",
               "ViewState": "AgIAABgAAAAAAAAAAAAAAC4AAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-14T09:35:38.566Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-14T09:35:38.566Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Source.cpp",
               "DocumentMoniker": "C:\\Users\\plusf\\Desktop\\gp5\\Class2th (Brute Force)\\Source.cpp",
               "RelativeDocumentMoniker": "..\\Class2th (Brute Force)\\Source.cpp",
@@ -74,8 +105,7 @@
               "RelativeToolTip": "..\\Class2th (Brute Force)\\Source.cpp",
               "ViewState": "AgIAAAkAAAAAAAAAAAAqwCoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-14T09:03:10.332Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-14T09:03:10.332Z"
             }
           ]
         }
