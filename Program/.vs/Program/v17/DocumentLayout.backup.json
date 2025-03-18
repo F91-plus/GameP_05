@@ -3,6 +3,9 @@
   "WorkspaceRootPath": "C:\\Users\\plusf\\Desktop\\gp5\\Program\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{925AE2D8-CD14-4A5E-959A-A958DD2F906C}|..\\Class6th(Euclid)\\Class6th(Euclid).vcxproj|C:\\Users\\plusf\\Desktop\\gp5\\Class6th(Euclid)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{27A7B6E1-3B92-4DB6-A07D-B5C451E86258}|..\\Class5th (insert Sort)\\Class5th (insert Sort).vcxproj|C:\\Users\\plusf\\Desktop\\gp5\\Class5th (insert Sort)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
@@ -32,18 +35,30 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Source.cpp",
-              "DocumentMoniker": "C:\\Users\\plusf\\Desktop\\gp5\\Class5th (insert Sort)\\Source.cpp",
-              "RelativeDocumentMoniker": "..\\Class5th (insert Sort)\\Source.cpp",
-              "ToolTip": "C:\\Users\\plusf\\Desktop\\gp5\\Class5th (insert Sort)\\Source.cpp",
-              "RelativeToolTip": "..\\Class5th (insert Sort)\\Source.cpp",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACYAAAAcAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\plusf\\Desktop\\gp5\\Class6th(Euclid)\\Source.cpp",
+              "RelativeDocumentMoniker": "..\\Class6th(Euclid)\\Source.cpp",
+              "ToolTip": "C:\\Users\\plusf\\Desktop\\gp5\\Class6th(Euclid)\\Source.cpp",
+              "RelativeToolTip": "..\\Class6th(Euclid)\\Source.cpp",
+              "ViewState": "AgIAADQAAAAAAAAAAAAAAEUAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-17T09:14:04.327Z",
+              "WhenOpened": "2025-03-17T10:38:49.034Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Source.cpp",
+              "DocumentMoniker": "C:\\Users\\plusf\\Desktop\\gp5\\Class5th (insert Sort)\\Source.cpp",
+              "RelativeDocumentMoniker": "..\\Class5th (insert Sort)\\Source.cpp",
+              "ToolTip": "C:\\Users\\plusf\\Desktop\\gp5\\Class5th (insert Sort)\\Source.cpp",
+              "RelativeToolTip": "..\\Class5th (insert Sort)\\Source.cpp",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-17T09:14:04.327Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Source.cpp",
               "DocumentMoniker": "C:\\Users\\plusf\\Desktop\\gp5\\Class4th (Select Sort)\\Source.cpp",
               "RelativeDocumentMoniker": "..\\Class4th (Select Sort)\\Source.cpp",
@@ -51,12 +66,11 @@
               "RelativeToolTip": "..\\Class4th (Select Sort)\\Source.cpp",
               "ViewState": "AgIAABsAAAAAAAAAAAAAADEAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-14T10:20:50.743Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-14T10:20:50.743Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Program.cpp",
               "DocumentMoniker": "C:\\Users\\plusf\\Desktop\\gp5\\Program\\Program.cpp",
               "RelativeDocumentMoniker": "Program.cpp",
@@ -64,12 +78,11 @@
               "RelativeToolTip": "Program.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAFEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-14T09:35:44.354Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-14T09:35:44.354Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Source.cpp",
               "DocumentMoniker": "C:\\Users\\plusf\\Desktop\\gp5\\Class3th (Bubble Sort)\\Source.cpp",
               "RelativeDocumentMoniker": "..\\Class3th (Bubble Sort)\\Source.cpp",
@@ -81,7 +94,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Source.cpp",
               "DocumentMoniker": "C:\\Users\\plusf\\Desktop\\gp5\\Class2th (Brute Force)\\Source.cpp",
               "RelativeDocumentMoniker": "..\\Class2th (Brute Force)\\Source.cpp",
