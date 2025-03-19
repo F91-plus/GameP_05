@@ -21,6 +21,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class6th(Euclid)", "..\Clas
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class7th (Sieve of Eratostheres)", "..\Class7th (Sieve of Eratostheres)\Class7th (Sieve of Eratostheres).vcxproj", "{E03F006F-1CA0-40A3-8573-900C6ECF6AB5}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class8th (Count Sort)", "..\Class8th (Count Sort)\Class8th (Count Sort).vcxproj", "{438A8E6D-638D-4F7E-89DB-BF954E6D2B92}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -93,6 +95,14 @@ Global
 		{E03F006F-1CA0-40A3-8573-900C6ECF6AB5}.Release|x64.Build.0 = Release|x64
 		{E03F006F-1CA0-40A3-8573-900C6ECF6AB5}.Release|x86.ActiveCfg = Release|Win32
 		{E03F006F-1CA0-40A3-8573-900C6ECF6AB5}.Release|x86.Build.0 = Release|Win32
+		{438A8E6D-638D-4F7E-89DB-BF954E6D2B92}.Debug|x64.ActiveCfg = Debug|x64
+		{438A8E6D-638D-4F7E-89DB-BF954E6D2B92}.Debug|x64.Build.0 = Debug|x64
+		{438A8E6D-638D-4F7E-89DB-BF954E6D2B92}.Debug|x86.ActiveCfg = Debug|Win32
+		{438A8E6D-638D-4F7E-89DB-BF954E6D2B92}.Debug|x86.Build.0 = Debug|Win32
+		{438A8E6D-638D-4F7E-89DB-BF954E6D2B92}.Release|x64.ActiveCfg = Release|x64
+		{438A8E6D-638D-4F7E-89DB-BF954E6D2B92}.Release|x64.Build.0 = Release|x64
+		{438A8E6D-638D-4F7E-89DB-BF954E6D2B92}.Release|x86.ActiveCfg = Release|Win32
+		{438A8E6D-638D-4F7E-89DB-BF954E6D2B92}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -65,14 +65,21 @@ void sieve(int n) {
 		container[i] = i;
 	}
 
-	for (int i = 2; i <= sqrt(n); i++)
-	{
+	for (int i = 2; i <= sqrt(n); i++)//n=10이면 2, 3	49면 7 234567
+	{//2부터 루트n 값 까지 ㅇㅋ?
 		if (container[i] == 0)
 		{
+			//4,6,8,10,9 걸러짐
 			continue;
 		}
 
 		for (int j = i * 2; j <= n; j += i) {
+			// 소수인 숫자들
+			// i가 2일때 4,6,8,10인 배열 란에 0이 들어감
+			// i가 3일때 6,9인 배열 란에 0이 들어감
+			// j 반복 끝나고 위에서 다시 실행 될 때
+			// i가 해당 배열 란의 값을 확인할 때 0 이면 바로 다음
+			// 값으로 넘어감
 			container[j] = 0;
 		}
 
@@ -96,15 +103,9 @@ int main()
 
 	int num = 22;
 
-	if (isPrime(num))
-	{
-		cout << "소수입니다." << endl;
-	}
-	else {
-		cout << "소수가 아님" << endl;
-	}
+	isPrime(num);
 
-	sieve(10);
+	//sieve(10);
 
 	sieve(49);
 }

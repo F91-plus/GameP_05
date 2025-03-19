@@ -2,38 +2,69 @@
 
 using namespace std;
 
-int main()
+int Find(int list[], int left, int right)
 {
-#pragma region 계수 정렬
-    /*
-        데이터의 값을 비교하지 않고 각 원소에 데이터가
-        몇 개 있는지 개수를 세어 저장한 다음 정렬하는 알고리즘
-    */
-#pragma endregion
+    cout << " left : " << left << " right : " << right << endl;
 
-    // 1. 해당 배열에 들어가있는 값을 확인해야함
-    // 2. 값이 몇개 인지 확인
-    // 3. 값이 낮은 순서 및 개수대로 출력해야함
-    int count = 0;
-    int check = 0;
-    int list[10] = {1,1,3,1,2,3,4,4,2,5}; // 하나가 99라면?
-    int* temp = new int[10];
-
-    for (int i = 0; i < 10; i++)
+    //배열 처음과 끝이 같다면 재귀 호출 해제?
+    if (left != right)
     {
-        check = list[i];
-        for (int j = 0; j < 10; j++)
+        int leftMax = Find(list, left, (left + right) / 2);
+        int rightMax = Find(list, (left + right) / 2 + 1, right);
+
+        int result = 0;
+        //max, min
+        if (leftMax > rightMax)
         {
-            if (check == list[j])
-            {
-                count++;
-            }
+            result = leftMax;
+            return result;
         }
-        for (int k = 0; k < count; k++)
+        else
         {
-            temp[i] = i;
+            result = rightMax;
+            return result;
         }
     }
+    else
+    {
+        return list[left];
+    }
+}
+
+
+int main()
+{
+#pragma region 분할 정복
+    /*
+        주어진 2개 이상의 부분으로 문제를 나눈 뒤 각 부분
+        문제에 대한 답을 재귀 호출을 이용하여 계산한 다음
+        그 답으로부터 전체 문제의 답을 계산해내는 알고리즘
+
+        분할 (Divide) : 주어진 문제를 두 개 혹은 그 이상의 형식으로 나눈다.
+
+        정복 (Conquer) : 나누어진 문제를 재귀적으로 해결해서 나누어진 문제를
+        더 이상 나누어서 문제가 필요없을 때까지 계속 분할한다.
+
+        통합 (Combine) : 나누어서 해결한 문제들을 통합해서 원래 문제의 해답을
+        생성한다.
+    */
+#pragma endregion
+    
+    int list[4] = { 1,2,3,4 };
+    int list_length = sizeof(list) / sizeof(list[0]);   //4
+    //int left = list_length / 2;
+    //int right = list_length / 2;
+    // 0~3 -> 0~1 / 2~3
+
+    //Find(list, 0, list_length-1);
+
+    cout << Find(list, 0, list_length - 1) << endl;
+
+    int list2[] = { 20, 15, 99, 1 };
+    int size = sizeof(list2) / sizeof(int);
+
+    cout << Find(list2, 0, size-1) << endl;
 
     return 0;
 }
+
