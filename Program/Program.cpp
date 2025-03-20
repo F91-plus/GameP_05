@@ -2,69 +2,82 @@
 
 using namespace std;
 
-int Find(int list[], int left, int right)
-{
-    cout << " left : " << left << " right : " << right << endl;
+#define SIZE 8
 
-    //배열 처음과 끝이 같다면 재귀 호출 해제?
-    if (left != right)
+void binary_Search2(int list[], int key) {
+    int left = 0;
+    int right = SIZE - 1;
+
+    while (left <= right) {
+        int pivot = (left + right) / 2;
+
+        if (list[pivot] == key)
+        {
+            cout << "Key Found : " << list[pivot] << endl;
+
+            return;
+        }
+        else if (list[pivot] > key) {
+            right = pivot - 1;
+        }
+        else {
+            left = pivot + 1;
+        }
+    }
+
+    cout << "Not Key Found" << endl;
+}
+
+void binary_Search(int list[], int key) {
+    // vector, array or 배열 사이즈를 매개변수로 전달해야함
+    int left = 0;
+    int right = sizeof(list) - 1;//포인터로 길이 8 고정
+    int middle = (left + right) / 2;
+
+    int* temp = new int[middle];
+
+    if (list[middle] < key)
     {
-        int leftMax = Find(list, left, (left + right) / 2);
-        int rightMax = Find(list, (left + right) / 2 + 1, right);
-
-        int result = 0;
-        //max, min
-        if (leftMax > rightMax)
+        for (int i = 0; i <= middle; i++)
         {
-            result = leftMax;
-            return result;
+            temp[i] = list[i+ middle +1];
         }
-        else
-        {
-            result = rightMax;
-            return result;
-        }
+        binary_Search(temp, key);
+    }
+    else if (list[middle] == key) {
+        cout << "key 값 [" << key << "] list : " << middle << "번째에 있습니다." << endl;
+    }
+    else if(left > right) {
+        cout << "찾는 값이 없습니다.";
     }
     else
     {
-        return list[left];
+        cout << "버그";
     }
 }
 
-
 int main()
 {
-#pragma region 분할 정복
+#pragma region 이진 탐색(Two Pointer)
     /*
-        주어진 2개 이상의 부분으로 문제를 나눈 뒤 각 부분
-        문제에 대한 답을 재귀 호출을 이용하여 계산한 다음
-        그 답으로부터 전체 문제의 답을 계산해내는 알고리즘
+        탐색 범위를 반으로 나누어 찾는 값을 포함하는 범위를
+        좁혀나가는 방식으로 동작하는 알고리즘 입니다.
 
-        분할 (Divide) : 주어진 문제를 두 개 혹은 그 이상의 형식으로 나눈다.
-
-        정복 (Conquer) : 나누어진 문제를 재귀적으로 해결해서 나누어진 문제를
-        더 이상 나누어서 문제가 필요없을 때까지 계속 분할한다.
-
-        통합 (Combine) : 나누어서 해결한 문제들을 통합해서 원래 문제의 해답을
-        생성한다.
+        배열 left 와 right 엇갈린 상태인 경우에는 함수 종료
+        left > right
     */
+
 #pragma endregion
-    
-    int list[4] = { 1,2,3,4 };
-    int list_length = sizeof(list) / sizeof(list[0]);   //4
-    //int left = list_length / 2;
-    //int right = list_length / 2;
-    // 0~3 -> 0~1 / 2~3
+    int list[8] = { 5,6,11,13,27,55,66,99 };
+    //vector<int> list = { 5,6,11,13,27,55,66,99 };
+    int key = 55;
 
-    //Find(list, 0, list_length-1);
+    //binary_Search(list, key);
 
-    cout << Find(list, 0, list_length - 1) << endl;
+    int list2[SIZE] = { 5,6,11,13,27,55,66,99 };
 
-    int list2[] = { 20, 15, 99, 1 };
-    int size = sizeof(list2) / sizeof(int);
+    binary_Search2(list2, key);
 
-    cout << Find(list2, 0, size-1) << endl;
 
     return 0;
 }
-

@@ -67,6 +67,10 @@ int main()
     for (int i = 0; i < SIZE; i++)
     {
         count[list[i] - 1]++;
+        /*
+            cout << " " << count[list[i] - 1]<< " ";
+            cout << "[" << count[list[i] - 1]++ <<"]" << " ";
+        */
     }
 
     for (int i = 0; i < 5; i++)
@@ -78,7 +82,6 @@ int main()
             }
         }
     }
-
 
     return 0;
 }
