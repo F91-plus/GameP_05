@@ -23,6 +23,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class8th (Count Sort)", "..
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class9th (Divide and Conquer)", "..\Class9th (Divide and Conquer)\Class9th (Divide and Conquer).vcxproj", "{B246C07B-906F-43B1-90B5-3B81EE7C45F1}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class10th (Binary Search)", "..\Class10th (Binary Search)\Class10th (Binary Search).vcxproj", "{21698431-7BD2-4CF9-8D06-1DC69AF4AEFD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -111,6 +113,14 @@ Global
 		{B246C07B-906F-43B1-90B5-3B81EE7C45F1}.Release|x64.Build.0 = Release|x64
 		{B246C07B-906F-43B1-90B5-3B81EE7C45F1}.Release|x86.ActiveCfg = Release|Win32
 		{B246C07B-906F-43B1-90B5-3B81EE7C45F1}.Release|x86.Build.0 = Release|Win32
+		{21698431-7BD2-4CF9-8D06-1DC69AF4AEFD}.Debug|x64.ActiveCfg = Debug|x64
+		{21698431-7BD2-4CF9-8D06-1DC69AF4AEFD}.Debug|x64.Build.0 = Debug|x64
+		{21698431-7BD2-4CF9-8D06-1DC69AF4AEFD}.Debug|x86.ActiveCfg = Debug|Win32
+		{21698431-7BD2-4CF9-8D06-1DC69AF4AEFD}.Debug|x86.Build.0 = Debug|Win32
+		{21698431-7BD2-4CF9-8D06-1DC69AF4AEFD}.Release|x64.ActiveCfg = Release|x64
+		{21698431-7BD2-4CF9-8D06-1DC69AF4AEFD}.Release|x64.Build.0 = Release|x64
+		{21698431-7BD2-4CF9-8D06-1DC69AF4AEFD}.Release|x86.ActiveCfg = Release|Win32
+		{21698431-7BD2-4CF9-8D06-1DC69AF4AEFD}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

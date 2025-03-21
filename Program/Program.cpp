@@ -2,82 +2,104 @@
 
 using namespace std;
 
-#define SIZE 8
+#define SIZE 6
 
-void binary_Search2(int list[], int key) {
-    int left = 0;
-    int right = SIZE - 1;
+void QuickSort(int list[], int start, int end) {
+    int pivot = start;    //list[start] -> start
+    int left = start+1;
+    int right = end;
 
-    while (left <= right) {
-        int pivot = (left + right) / 2;
-
-        if (list[pivot] == key)
+    for (int i = left; i <= end; i++)
+    {
+        if (list[pivot] < list[i])
         {
-            cout << "Key Found : " << list[pivot] << endl;
-
-            return;
-        }
-        else if (list[pivot] > key) {
-            right = pivot - 1;
-        }
-        else {
-            left = pivot + 1;
+            swap(list[i], list[right]);
         }
     }
 
-    cout << "Not Key Found" << endl;
+    for (int i = right; i >= start; i--)
+    {
+        if (list[pivot] > list[i]) {
+            swap(list[i], list[start]);
+        }
+    }
 }
 
-void binary_Search(int list[], int key) {
-    // vector, array or 배열 사이즈를 매개변수로 전달해야함
-    int left = 0;
-    int right = sizeof(list) - 1;//포인터로 길이 8 고정
-    int middle = (left + right) / 2;
-
-    int* temp = new int[middle];
-
-    if (list[middle] < key)
+void QuickSort2(int list[], int start, int end) {
+    int pivot = start;    //list[start] -> start
+    int left = start + 1;
+    int right = end;
+    
+    if (start == end)
     {
-        for (int i = 0; i <= middle; i++)
+        return;
+    }
+
+    // left가 right보다 크거나 같을 떄까지 반복한다.
+    while (left <= right) 
+    {
+        //  left가 end보다 작거나 같고 list[left]가
+        //  list[pivot]보다 작거나 같을 떄까지 반복한다.
+        while (left <= end && list[pivot] >= list[left]) 
         {
-            temp[i] = list[i+ middle +1];
+            left++;     //left값 증가
         }
-        binary_Search(temp, key);
+
+        //right가 start보다 크고 list[right]가
+        //list[pivot]보다 크거나 같을 때까지 반복한다.
+        while (right > start && list[pivot] <= list[right]) {
+            right--;    //right의 값 감소
+        }
+
+        if (left > right)
+        {
+            std::swap(list[pivot], list[right]);
+        }
+        else
+        {
+            std::swap(list[left], list[right]);
+        }
     }
-    else if (list[middle] == key) {
-        cout << "key 값 [" << key << "] list : " << middle << "번째에 있습니다." << endl;
-    }
-    else if(left > right) {
-        cout << "찾는 값이 없습니다.";
-    }
-    else
+
+    if (start != end)
     {
-        cout << "버그";
+        QuickSort2(list, start, left);
     }
+    //QuickSort2(list, left, right);
+
 }
 
 int main()
 {
-#pragma region 이진 탐색(Two Pointer)
+#pragma region 퀵 정렬
     /*
-        탐색 범위를 반으로 나누어 찾는 값을 포함하는 범위를
-        좁혀나가는 방식으로 동작하는 알고리즘 입니다.
+        기준점을 획득한 다음 기준점을 기준으로 배열을 나누고
+        한 쪽에는 기준점보다 작은 값들이 위치하게 하고 다른 
+        한 쪽에는 기준점 보다 큰 값들이 위치하도록 정렬한다.
 
-        배열 left 와 right 엇갈린 상태인 경우에는 함수 종료
-        left > right
+        나누어진 하위 배열에 대해 재귀적으로 퀵 정렬을 호출하여
+        모든 배열이 기본 배열이 될 떄까지 반복하면서 정렬하는 
+        알고리즘
+
+        left 또는 right가 index를 넘어선 경우
+        회차
+        1.  546213  pivot = 5
+            143256
+        2.  143256  pivot = 1?
+            
     */
-
 #pragma endregion
-    int list[8] = { 5,6,11,13,27,55,66,99 };
-    //vector<int> list = { 5,6,11,13,27,55,66,99 };
-    int key = 55;
 
-    //binary_Search(list, key);
+    int list[SIZE] = { 5,4,6,2,1,3 };
 
-    int list2[SIZE] = { 5,6,11,13,27,55,66,99 };
+    //QuickSort(list, 0, sizeof(list) / sizeof(int) - 1);
 
-    binary_Search2(list2, key);
+    QuickSort2(list, 0, SIZE - 1);
 
+    for (int i = 0; i < SIZE; i++)
+    {
+        cout << list[i] << " ";
+    }
 
     return 0;
 }
