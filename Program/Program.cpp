@@ -2,104 +2,89 @@
 
 using namespace std;
 
-#define SIZE 6
+#define SIZE 1024
 
-void QuickSort(int list[], int start, int end) {
-    int pivot = start;    //list[start] -> start
-    int left = start+1;
-    int right = end;
+int save_list[SIZE];
 
-    for (int i = left; i <= end; i++)
-    {
-        if (list[pivot] < list[i])
-        {
-            swap(list[i], list[right]);
-        }
-    }
+int Fibonacci(int n) 
+{
+	int* temp = new int[n];
+	int num = 1;
 
-    for (int i = right; i >= start; i--)
-    {
-        if (list[pivot] > list[i]) {
-            swap(list[i], list[start]);
-        }
-    }
+	if (n == 0) return 1;
+
+	temp[0] = num;
+	if (n <= 2)
+	{
+		for (int i = 0; i < n; i++)
+		{
+			temp[i] = temp[i];
+		}
+	}
+	else {
+		temp[1] = temp[0];
+		for (int i = 2; i < n; i++)
+		{
+			temp[i] = temp[i - 2] + temp[i-1];
+		}
+	}
+
+	for (int i = 0; i < n; i++)
+	{
+		cout << temp[i] << " ";
+	}
+
+	return 0;
 }
 
-void QuickSort2(int list[], int start, int end) {
-    int pivot = start;    //list[start] -> start
-    int left = start + 1;
-    int right = end;
-    
-    if (start == end)
-    {
-        return;
-    }
+int Fibonacci2(int n)
+{
+	if (n == 0) {
+		return 0;
+	}
+	else if (n <= 2)
+	{
+		return 1;
+	}
 
-    // left가 right보다 크거나 같을 떄까지 반복한다.
-    while (left <= right) 
-    {
-        //  left가 end보다 작거나 같고 list[left]가
-        //  list[pivot]보다 작거나 같을 떄까지 반복한다.
-        while (left <= end && list[pivot] >= list[left]) 
-        {
-            left++;     //left값 증가
-        }
+	if (save_list[n] != 0) 
+	{	
+		return Fibonacci2(save_list[n]);
+	}
 
-        //right가 start보다 크고 list[right]가
-        //list[pivot]보다 크거나 같을 때까지 반복한다.
-        while (right > start && list[pivot] <= list[right]) {
-            right--;    //right의 값 감소
-        }
-
-        if (left > right)
-        {
-            std::swap(list[pivot], list[right]);
-        }
-        else
-        {
-            std::swap(list[left], list[right]);
-        }
-    }
-
-    if (start != end)
-    {
-        QuickSort2(list, start, left);
-    }
-    //QuickSort2(list, left, right);
-
+	if (save_list[n] == 0)
+	{
+		//save_list[n] = n;
+	}
+	return Fibonacci2(n - 1) + Fibonacci2(n - 2);
 }
 
 int main()
 {
-#pragma region 퀵 정렬
-    /*
-        기준점을 획득한 다음 기준점을 기준으로 배열을 나누고
-        한 쪽에는 기준점보다 작은 값들이 위치하게 하고 다른 
-        한 쪽에는 기준점 보다 큰 값들이 위치하도록 정렬한다.
+#pragma region 동적 계획법
+	/*
+		특정 범위까지의 값을 구하기 위해 그것과 다른 범위까지의
+		값을 이용해서 효율적으로 값을 구하는 알고리즘
 
-        나누어진 하위 배열에 대해 재귀적으로 퀵 정렬을 호출하여
-        모든 배열이 기본 배열이 될 떄까지 반복하면서 정렬하는 
-        알고리즘
+		(Overlapping Subproblems) 겹치는 부분 문제
+		동일한 작은 문제들이 반복하여 나타나는 경우를 의미
 
-        left 또는 right가 index를 넘어선 경우
-        회차
-        1.  546213  pivot = 5
-            143256
-        2.  143256  pivot = 1?
-            
-    */
+		(Optimal Substructure) 최적 부분 구조
+		부분 문제의 최적 결과 값을 사용하여 전체 문제의 최적
+		결과를 낼 수 있는 경우를 의미
+
+		메모이제이션 (Memoization)
+		프로그램이 동일한 계산을 반복해야 할 떄, 이전에 계산한
+		값을 메모리에 저장함으로써 동일한 계산을 반복 수행하는
+		작업을 제거하여 프로그램의 실행 속도를 향상시키는 방법
+	*/
 #pragma endregion
 
-    int list[SIZE] = { 5,4,6,2,1,3 };
+	int num = 50;
 
-    //QuickSort(list, 0, sizeof(list) / sizeof(int) - 1);
+	//Fibonacci(num);
 
-    QuickSort2(list, 0, SIZE - 1);
-
-    for (int i = 0; i < SIZE; i++)
-    {
-        cout << list[i] << " ";
-    }
-
-    return 0;
+	//cout<<Fibonacci2(50)<<endl;	// 계산이 1분 넘음
+	cout<<Fibonacci2(5)<<endl;		// 
+	return 0;
 }
