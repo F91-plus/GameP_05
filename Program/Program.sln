@@ -31,6 +31,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class12th (Marge Sort)", ".
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class13th (Dynamic Programing)", "..\Class13th (Dynamic Programing)\Class13th (Dynamic Programing).vcxproj", "{999F84B7-DBDA-4099-A9E7-6ED355B0C121}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class14th", "..\Class14th\Class14th.vcxproj", "{7091BC06-F318-400D-A2DA-49B83D37C34F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -151,6 +153,14 @@ Global
 		{999F84B7-DBDA-4099-A9E7-6ED355B0C121}.Release|x64.Build.0 = Release|x64
 		{999F84B7-DBDA-4099-A9E7-6ED355B0C121}.Release|x86.ActiveCfg = Release|Win32
 		{999F84B7-DBDA-4099-A9E7-6ED355B0C121}.Release|x86.Build.0 = Release|Win32
+		{7091BC06-F318-400D-A2DA-49B83D37C34F}.Debug|x64.ActiveCfg = Debug|x64
+		{7091BC06-F318-400D-A2DA-49B83D37C34F}.Debug|x64.Build.0 = Debug|x64
+		{7091BC06-F318-400D-A2DA-49B83D37C34F}.Debug|x86.ActiveCfg = Debug|Win32
+		{7091BC06-F318-400D-A2DA-49B83D37C34F}.Debug|x86.Build.0 = Debug|Win32
+		{7091BC06-F318-400D-A2DA-49B83D37C34F}.Release|x64.ActiveCfg = Release|x64
+		{7091BC06-F318-400D-A2DA-49B83D37C34F}.Release|x64.Build.0 = Release|x64
+		{7091BC06-F318-400D-A2DA-49B83D37C34F}.Release|x86.ActiveCfg = Release|Win32
+		{7091BC06-F318-400D-A2DA-49B83D37C34F}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
