@@ -6,100 +6,89 @@ using namespace std;
 
 #define SIZE 8
 
-class Node {
+class Graph {
 private:
-	queue<int> queue;	//+
-
-	bool visited[SIZE];
-	vector<int> breadthList[SIZE];
+	queue<int> q;
+	vector<int> adjacencyList[SIZE];
+	int degree[SIZE];
 public:
-	Node() 
-	{
+	Graph() {	//class name
 		for (int i = 0; i < SIZE; i++)
 		{
-			visited[i] = false;
-			//breadthList[i].clear;
+			degree[i] = 0;
 		}
 	}
 
-	void insert(int i, int j) 
-	{
-		breadthList[i].push_back(j);
-		breadthList[j].push_back(i);
-		/*if (i>=0 && i<SIZE && j>=0 && j<SIZE)
-		{
-			
-		}*/
+	void insert(int vertex, int edge) {
+		adjacencyList[vertex].push_back(edge);
+
+		degree[edge]++;
 	}
 
-	void search(int start) 
+	// 1 2 5 3 4 6 7
+	void sort() 
 	{
-		queue.push(start);
-		visited[start] = true;
+		int temp;
 
-		while (queue.empty() == false)
+		for (int i = 1; i < SIZE; i++)
 		{
-			int temp = queue.front();
-
-			queue.pop();
-
-			cout << temp << " ";
-
-			for (int i = 0; i < breadthList[temp].size(); i++)
+			if (degree[i] == 0)
 			{
-				int next = breadthList[temp][i];
-
-				if (visited[next] == false)
+				q.push(i);
+				
+				for (int j = 0; j < adjacencyList[i].size(); j++)
 				{
-					queue.push(next);
-					visited[next] = true;
+					//adjacencyList[i].pop_back();
+					int a = adjacencyList[i].back();
+					//adjacencyList[i].get_allocator();
+					degree[a]--;
+					
 				}
+
+				temp = q.front();
+				cout << temp;
+				q.pop();
 			}
 		}
-		//for (int i = 0; i < SIZE; i++)
-		//{
-		//	int temp = 0;
-		//	int next = breadthList[start][i];
-		//	//breadthList[start].pop_back();
-
-		//	queue.push(start);
-		//	visited[start] = true;
-		//	temp = queue.pop();
-
-		//	if (visited[temp] == true)
-		//	{
-		//		//queue.push(breadthList[temp][i]);
-		//		//queue.push(next);
-		//		visited[temp] = true;
-		//		cout << temp << " ";
-		//	}
-		//}
 	}
 };
 
 int main()
 {
-#pragma region 너비 우선 탐색(Breadth First Search)
+#pragma region 위상 정렬
 	/*
-		시작 정점을 방문한 후 시작 정점에 인접한
-		모든 정점들을 우선 방문하는 방법
+		병합 그래프에 존재하는 각 정점들의 선행 순서를 지키며,
+		모든 정점을 차례대로 진행하는 알고리즘
 
-		더 이상 방문하지 않은 정점이 없을 때까지 방문하지 않은 
-		모든 정점들에 대해서도 너비 우선 탐색을 적용합니다.
+		사이클이 발생하는 경우 위상 정렬을 수행할 수 없다.
+
+		DAG (Directed Acyclic Graph ) : 사이클이 존재하지 않는 그래프
+
+		시간 복잡도 : O (V+E)
+
+		위상 정렬하는 방법
+
+		1. 진입 차수가 0인 정점을 Queue에 삽입
+		2. Queue에서 원소를 꺼내 연결된 모든 간선을 제거한다.
+		3. 간선 제거 이후에 진입 차수가 0이 된 정점을 Queue에 삽입한다.
+		4. Queue가 비어있을 떄까지 2~3번 작업을 반복 수행한다.
 	*/
 #pragma endregion
 
-	Node node;
-	node.insert(1, 2);
-	node.insert(1, 3);
+	Graph graph;
+	graph.insert(1, 2);
+	graph.insert(1, 5);
 
-	node.insert(2, 4);
-	node.insert(2, 5);
+	graph.insert(2, 3);
 
-	node.insert(3, 6);
-	node.insert(3, 7);
+	graph.insert(3, 4);
 
-	node.search(1);
+	graph.insert(4, 6);
 
+	graph.insert(5, 6);
+
+	graph.insert(6, 7);
+
+	graph.sort();
 	return 0;
 }

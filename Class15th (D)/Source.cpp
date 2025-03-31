@@ -5,7 +5,6 @@ using namespace std;
 
 #define SIZE 8
 
-//template <typename T = int>
 class Node {
 private:
 	bool visited[SIZE];
@@ -16,7 +15,6 @@ public:
 		for (int i = 0; i < SIZE; i++)
 		{
 			visited[i] = false;
-			adjacencyList[i];
 		}
 	}
 
@@ -49,11 +47,64 @@ public:
 	}
 };
 
+class Node2
+{
+private:
+	bool visited2[SIZE];
+	vector<int> List[SIZE];
+public:
+	Node2()
+	{
+		for (int i = 0; i < SIZE; i++)
+		{
+			visited2[i] = false;
+		}
+	}
+
+	int insert2(int i, int j)
+	{
+		List[i].push_back(j);
+		List[j].push_back(i);
+	}
+
+	void search2(int start)
+	{
+		visited2[start] = true;
+
+		cout << start << " ";
+
+		for (int i = 0; i < List[start].size(); i++)
+		{
+			int next2 = List[start][i];
+
+			if (visited2[next2] == false)
+			{
+				search2(next2);
+			}
+		}
+	}
+
+};
 
 
 int main()
 {
-#pragma region MyRegion
+#pragma region 깊이 우선 탐색 (Depth First Search)
+	/*
+		root 노드에서부터 다음 분기로 넘어가기 전에
+		해당 분기를 완벽하게 탐색하는 방법
+
+		깊이 우선 탐색은 Stack이라는 자료 구조를 활용함
+
+		1. 시작 노드를 스택에 넣고 방문 처리를 한다.
+		2. 스택의 최상단 노드에 방문하지 않은 인접 노드가 있으면
+		   그 노드를 스택에 넣고 방문처리한다.
+
+		3. 방문하지 않은 인접 노드가 없으면 스택에서 최상단에 있는 노드를
+		   꺼낸다.
+
+		4. 더 이상 2번의 과정을 수행할 수 이없을 때까지 반복한다.
+	*/
 
 #pragma endregion
 

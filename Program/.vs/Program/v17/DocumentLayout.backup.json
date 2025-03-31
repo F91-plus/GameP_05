@@ -7,34 +7,16 @@
       "RelativeMoniker": "D:0:0:{93358822-8684-4518-B3A5-B64E0DFBA9C9}|Program.vcxproj|solutionrelative:Program.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{93358822-8684-4518-B3A5-B64E0DFBA9C9}|Program.vcxproj|C:\\PROGRAM FILES\\MICROSOFT VISUAL STUDIO\\2022\\COMMUNITY\\VC\\TOOLS\\MSVC\\14.43.34808\\INCLUDE\\QUEUE||{3B902123-F8A7-4915-9F01-361F908088D0}|"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\include\\vector||{3B902123-F8A7-4915-9F01-361F908088D0}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{473CE076-B89B-49E6-B4E1-609C3C039363}|..\\Class15th (D)\\Class15th (D).vcxproj|C:\\Users\\plusf\\Desktop\\GameP_05\\Class15th (D)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{894AC547-61A8-4BAA-941C-9516D64FD39B}|..\\Class 16th (Breadth First Search)\\Class 16th (Breadth First Search).vcxproj|C:\\Users\\plusf\\Desktop\\GameP_05\\Class 16th (Breadth First Search)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7091BC06-F318-400D-A2DA-49B83D37C34F}|..\\Class14th\\Class14th.vcxproj|C:\\Users\\plusf\\Desktop\\GameP_05\\Class14th\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\crt\\src\\vcruntime\\debugger_jmc.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\crt\\src\\vcruntime\\delete_scalar.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\include\\utility||{3B902123-F8A7-4915-9F01-361F908088D0}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\plusf\\Desktop\\gp5\\Class13th (Dynamic Programing)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\plusf\\Desktop\\gp5\\Class12th (Marge Sort)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\plusf\\Desktop\\gp5\\Class7th (Sieve of Eratostheres)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\plusf\\Desktop\\gp5\\Class11th (Quick Sort)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{473CE076-B89B-49E6-B4E1-609C3C039363}|..\\Class15th (D)\\Class15th (D).vcxproj|C:\\Users\\plusf\\Desktop\\GameP_05\\Class15th (D)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -44,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -57,123 +39,41 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "queue",
-              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\include\\queue",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\include\\queue",
-              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\include\\queue",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\include\\queue",
-              "ViewState": "AgIAAJIBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "vector",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\include\\vector",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\include\\vector",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\include\\vector",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\include\\vector",
+              "ViewState": "AgIAAKAHAAAAAAAAAAAUwLIHAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-03-28T09:51:25.172Z",
+              "WhenOpened": "2025-03-31T10:28:29.398Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Source.cpp",
-              "DocumentMoniker": "C:\\Users\\plusf\\Desktop\\GameP_05\\Class15th (D)\\Source.cpp",
-              "RelativeDocumentMoniker": "..\\Class15th (D)\\Source.cpp",
-              "ToolTip": "C:\\Users\\plusf\\Desktop\\GameP_05\\Class15th (D)\\Source.cpp",
-              "RelativeToolTip": "..\\Class15th (D)\\Source.cpp",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAAA8AAAAgAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\plusf\\Desktop\\GameP_05\\Class 16th (Breadth First Search)\\Source.cpp",
+              "RelativeDocumentMoniker": "..\\Class 16th (Breadth First Search)\\Source.cpp",
+              "ToolTip": "C:\\Users\\plusf\\Desktop\\GameP_05\\Class 16th (Breadth First Search)\\Source.cpp",
+              "RelativeToolTip": "..\\Class 16th (Breadth First Search)\\Source.cpp",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAAGAAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-28T09:16:35.083Z",
+              "WhenOpened": "2025-03-31T09:02:56.092Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Source.cpp",
-              "DocumentMoniker": "C:\\Users\\plusf\\Desktop\\gp5\\Class13th (Dynamic Programing)\\Source.cpp",
-              "RelativeDocumentMoniker": "..\\..\\gp5\\Class13th (Dynamic Programing)\\Source.cpp",
-              "ToolTip": "C:\\Users\\plusf\\Desktop\\gp5\\Class13th (Dynamic Programing)\\Source.cpp",
-              "RelativeToolTip": "..\\..\\gp5\\Class13th (Dynamic Programing)\\Source.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-26T09:15:55.315Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "debugger_jmc.c",
-              "DocumentMoniker": "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\crt\\src\\vcruntime\\debugger_jmc.c",
-              "ToolTip": "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\crt\\src\\vcruntime\\debugger_jmc.c",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAkwBYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-03-25T10:26:44.171Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
               "Title": "Source.cpp",
-              "DocumentMoniker": "C:\\Users\\plusf\\Desktop\\gp5\\Class12th (Marge Sort)\\Source.cpp",
-              "RelativeDocumentMoniker": "..\\..\\gp5\\Class12th (Marge Sort)\\Source.cpp",
-              "ToolTip": "C:\\Users\\plusf\\Desktop\\gp5\\Class12th (Marge Sort)\\Source.cpp",
-              "RelativeToolTip": "..\\..\\gp5\\Class12th (Marge Sort)\\Source.cpp",
-              "ViewState": "AgIAAGsAAAAAAAAAAAAAAG0AAAAfAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\plusf\\Desktop\\GameP_05\\Class15th (D)\\Source.cpp",
+              "RelativeDocumentMoniker": "..\\Class15th (D)\\Source.cpp",
+              "ToolTip": "C:\\Users\\plusf\\Desktop\\GameP_05\\Class15th (D)\\Source.cpp",
+              "RelativeToolTip": "..\\Class15th (D)\\Source.cpp",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAIAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-25T09:11:39.77Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "delete_scalar.cpp",
-              "DocumentMoniker": "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\crt\\src\\vcruntime\\delete_scalar.cpp",
-              "ToolTip": "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\crt\\src\\vcruntime\\delete_scalar.cpp",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-24T10:31:23.719Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Source.cpp",
-              "DocumentMoniker": "C:\\Users\\plusf\\Desktop\\gp5\\Class7th (Sieve of Eratostheres)\\Source.cpp",
-              "RelativeDocumentMoniker": "..\\..\\gp5\\Class7th (Sieve of Eratostheres)\\Source.cpp",
-              "ToolTip": "C:\\Users\\plusf\\Desktop\\gp5\\Class7th (Sieve of Eratostheres)\\Source.cpp",
-              "RelativeToolTip": "..\\..\\gp5\\Class7th (Sieve of Eratostheres)\\Source.cpp",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-24T09:20:04.451Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cpp",
-              "DocumentMoniker": "C:\\Users\\plusf\\Desktop\\GameP_05\\Program\\Program.cpp",
-              "RelativeDocumentMoniker": "Program.cpp",
-              "ToolTip": "C:\\Users\\plusf\\Desktop\\GameP_05\\Program\\Program.cpp",
-              "RelativeToolTip": "Program.cpp",
-              "ViewState": "AgIAADcAAAAAAAAAAAAAAGUAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-14T09:35:44.354Z",
+              "WhenOpened": "2025-03-29T13:48:52.666Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Source.cpp",
-              "DocumentMoniker": "C:\\Users\\plusf\\Desktop\\gp5\\Class11th (Quick Sort)\\Source.cpp",
-              "RelativeDocumentMoniker": "..\\..\\gp5\\Class11th (Quick Sort)\\Source.cpp",
-              "ToolTip": "C:\\Users\\plusf\\Desktop\\gp5\\Class11th (Quick Sort)\\Source.cpp",
-              "RelativeToolTip": "..\\..\\gp5\\Class11th (Quick Sort)\\Source.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-24T09:08:41.573Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "utility",
-              "DocumentMoniker": "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\include\\utility",
-              "ToolTip": "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\include\\utility",
-              "ViewState": "AgIAAHgAAAAAAAAAAADwv44AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-03-21T10:31:48.735Z"
             },
             {
               "$type": "Document",
@@ -183,9 +83,23 @@
               "RelativeDocumentMoniker": "..\\Class14th\\Source.cpp",
               "ToolTip": "C:\\Users\\plusf\\Desktop\\GameP_05\\Class14th\\Source.cpp",
               "RelativeToolTip": "..\\Class14th\\Source.cpp",
-              "ViewState": "AgIAAF8AAAAAAAAAAAAkwHcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-27T09:20:52.853Z"
+              "WhenOpened": "2025-03-29T13:48:30.517Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cpp",
+              "DocumentMoniker": "C:\\Users\\plusf\\Desktop\\GameP_05\\Program\\Program.cpp",
+              "RelativeDocumentMoniker": "Program.cpp",
+              "ToolTip": "C:\\Users\\plusf\\Desktop\\GameP_05\\Program\\Program.cpp*",
+              "RelativeToolTip": "Program.cpp*",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-29T13:47:58.271Z",
+              "EditorCaption": ""
             }
           ]
         }
