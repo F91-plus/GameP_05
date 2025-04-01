@@ -1,94 +1,110 @@
 ﻿#include <iostream>
-#include <vector>
-#include <queue>
 
 using namespace std;
 
-#define SIZE 8
+#define SIZE 6
 
-class Graph {
-private:
-	queue<int> q;
-	vector<int> adjacencyList[SIZE];
-	int degree[SIZE];
-public:
-	Graph() {	//class name
-		for (int i = 0; i < SIZE; i++)
-		{
-			degree[i] = 0;
-		}
+int parent[SIZE];
+
+bool same(int x, int y) {
+	if (parent[x] == parent[y]) {
+		cout << "참" << endl;
+		return true;
 	}
-
-	void insert(int vertex, int edge) {
-		adjacencyList[vertex].push_back(edge);
-
-		degree[edge]++;
-	}
-
-	// 1 2 5 3 4 6 7
-	void sort() 
+	else
 	{
-		int temp;
-
-		for (int i = 1; i < SIZE; i++)
-		{
-			if (degree[i] == 0)
-			{
-				q.push(i);
-				
-				for (int j = 0; j < adjacencyList[i].size(); j++)
-				{
-					//adjacencyList[i].pop_back();
-					int a = adjacencyList[i].back();
-					//adjacencyList[i].get_allocator();
-					degree[a]--;
-					
-				}
-
-				temp = q.front();
-				cout << temp;
-				q.pop();
-			}
-		}
+		cout << "거짓" << endl;
+		return false;
 	}
-};
+}
+
+int find(int x) {
+	if (x == 0) 
+	{
+		return parent[x];
+	}
+	else if (parent[x] != parent[x - 1])
+	{
+		return find(x-1);
+	}
+	
+	while (!(x == parent[x-1]))
+	{
+		return find(x - 1);
+	}
+}
+
+void Union(int x, int y) {
+	int a = find(x);
+	int b = find(y);
+
+	cout << "a : " << a << endl;
+	cout << "b : " << b << endl;
+	cout << endl;
+}
+
+int find2(int x) 
+{
+	//배열의 인덱스와 값이 같다면 Root Node 발견
+	if (x == parent[x]) {
+		return x;
+	}
+	else {
+		// 부모 노드의 번호를 전달하면서, Root Node를 찾을 떄까지
+		// 재귀 호출을 반복한다.
+		return parent[x] = find(parent[x]);
+	}
+}
+
+void Union2(int x, int y) 
+{
+	x = find2(x);
+	y = find2(y);
+
+	if (x == y) return;
+
+	if (x < y)
+	{
+		parent[y] = x;
+	}
+	else {
+		parent[x] = y;
+	}
+
+	same(x, y);
+}
+
+
 
 int main()
 {
-#pragma region 위상 정렬
+#pragma region 유니온 파인드
 	/*
-		병합 그래프에 존재하는 각 정점들의 선행 순서를 지키며,
-		모든 정점을 차례대로 진행하는 알고리즘
+		여러 노드가 존재할 떄 어떤 노드가 다른 노드와 연결되어
+		있는지 확인하는 알고리즘
 
-		사이클이 발생하는 경우 위상 정렬을 수행할 수 없다.
+		Union : 특정한 두 개의 노드를 같은 집합으로 합치는 연산
 
-		DAG (Directed Acyclic Graph ) : 사이클이 존재하지 않는 그래프
+		find : 특정한 노드가 어느 집합에 있는지 확인하는 연산
 
-		시간 복잡도 : O (V+E)
+		1. 배열의 1번에 있는 값을 확인
+		2. 배열의 0번에 있는 값을 확인
+		3. 배열의 인덱스와 값이 일치
+		4. 0번과 1번노드가 속해있는 트리의 루트 노드이다
 
-		위상 정렬하는 방법
-
-		1. 진입 차수가 0인 정점을 Queue에 삽입
-		2. Queue에서 원소를 꺼내 연결된 모든 간선을 제거한다.
-		3. 간선 제거 이후에 진입 차수가 0이 된 정점을 Queue에 삽입한다.
-		4. Queue가 비어있을 떄까지 2~3번 작업을 반복 수행한다.
+		Root Node를 찾는 함수
+		
+		
 	*/
 #pragma endregion
+	
+	for (int i = 0; i < SIZE; i++)
+	{
+		parent[i] = i;
+	}
 
-	Graph graph;
-	graph.insert(1, 2);
-	graph.insert(1, 5);
-
-	graph.insert(2, 3);
-
-	graph.insert(3, 4);
-
-	graph.insert(4, 6);
-
-	graph.insert(5, 6);
-
-	graph.insert(6, 7);
-
-	graph.sort();
+	Union2(0, 1);
+	Union2(3, 5);
+		
 	return 0;
 }
