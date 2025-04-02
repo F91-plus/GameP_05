@@ -1,110 +1,74 @@
 ﻿#include <iostream>
+#include <vector>
 
 using namespace std;
 
-#define SIZE 6
+#define SIZE 8
 
-int parent[SIZE];
+class Kruskal {
+private:
+	class Edge { 				
+	private:
+		int vertexX;
+		int vertexY;
+		int weight;
+	public:
+		Edge(int vertexX, int vertexY, int weight) {
+			this->vertexX = vertexX;
+			this->vertexY = vertexY;
+			this->weight = weight;
+		}
+	};
+	int cost;
+	int parent[SIZE];
+	vector<Edge> nodeList;
+	
+public:
+	Kruskal() {
+		cost = 0;
 
-bool same(int x, int y) {
-	if (parent[x] == parent[y]) {
-		cout << "참" << endl;
-		return true;
+		for (int i = 0; i < SIZE; i++)
+		{
+			parent[i] = i;
+		}
 	}
-	else
-	{
-		cout << "거짓" << endl;
-		return false;
-	}
-}
 
-int find(int x) {
-	if (x == 0) 
-	{
-		return parent[x];
-	}
-	else if (parent[x] != parent[x - 1])
-	{
-		return find(x-1);
+	void insert(int vertexX, int vertexY, int weight) {
+		//Edge edge(vertexX, vertexY, weight);
+		nodeList.push_back(Edge(vertexX, vertexY, weight));	//..k(edge);
 	}
 	
-	while (!(x == parent[x-1]))
-	{
-		return find(x - 1);
-	}
-}
-
-void Union(int x, int y) {
-	int a = find(x);
-	int b = find(y);
-
-	cout << "a : " << a << endl;
-	cout << "b : " << b << endl;
-	cout << endl;
-}
-
-int find2(int x) 
-{
-	//배열의 인덱스와 값이 같다면 Root Node 발견
-	if (x == parent[x]) {
-		return x;
-	}
-	else {
-		// 부모 노드의 번호를 전달하면서, Root Node를 찾을 떄까지
-		// 재귀 호출을 반복한다.
-		return parent[x] = find(parent[x]);
-	}
-}
-
-void Union2(int x, int y) 
-{
-	x = find2(x);
-	y = find2(y);
-
-	if (x == y) return;
-
-	if (x < y)
-	{
-		parent[y] = x;
-	}
-	else {
-		parent[x] = y;
-	}
-
-	same(x, y);
-}
-
-
+};
 
 int main()
 {
-#pragma region 유니온 파인드
+#pragma region 최소 신장 트리
 	/*
-		여러 노드가 존재할 떄 어떤 노드가 다른 노드와 연결되어
-		있는지 확인하는 알고리즘
+		그래프의 모든 정점을 포함하면서 사이클이 존재하지 않는
+		부분 그래프로, 그래프의 모든 정점을 최소 비용으로 연결하는 트리
 
-		Union : 특정한 두 개의 노드를 같은 집합으로 합치는 연산
+		그래프의 정점의 수가 n개일 때, 간선의 수는 n-1개
 
-		find : 특정한 노드가 어느 집합에 있는지 확인하는 연산
-
-		1. 배열의 1번에 있는 값을 확인
-		2. 배열의 0번에 있는 값을 확인
-		3. 배열의 인덱스와 값이 일치
-		4. 0번과 1번노드가 속해있는 트리의 루트 노드이다
-
-		Root Node를 찾는 함수
-		
-		
+		- class Kruskal > class edge, cost
+		- parent[] (사이클 확인용), size 8
 	*/
 #pragma endregion
-	
-	for (int i = 0; i < SIZE; i++)
-	{
-		parent[i] = i;
-	}
+	Kruskal kruskal;
+	kruskal.insert(1, 7, 10);
+	kruskal.insert(4, 7, 14);
 
-	Union2(0, 1);
-	Union2(3, 5);
+	kruskal.insert(1, 4, 30);
+	kruskal.insert(2, 4, 25);
+
+	kruskal.insert(1, 2, 64);
+	kruskal.insert(1, 5, 19);
+
+	kruskal.insert(5, 7, 73);
+	kruskal.insert(2, 5, 61);
+
+	kruskal.insert(5, 3, 22);
+	kruskal.insert(5, 6, 48);
+	kruskal.insert(3, 6, 36);
 		
 	return 0;
 }
