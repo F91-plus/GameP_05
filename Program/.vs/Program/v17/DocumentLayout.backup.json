@@ -7,6 +7,9 @@
       "RelativeMoniker": "D:0:0:{93358822-8684-4518-B3A5-B64E0DFBA9C9}|Program.vcxproj|solutionrelative:Program.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{128B0F84-C761-4289-91E0-B2CF9F283388}|..\\Class20th (Dijkstra)\\Class20th (Dijkstra).vcxproj|C:\\Users\\plusf\\Desktop\\GameP_05\\Class20th (Dijkstra)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C1D891BB-B2EE-483E-8104-35D9BC2FEA6C}|..\\Class 19th (Kruskal)\\Class 19th (Kruskal).vcxproj|C:\\Users\\plusf\\Desktop\\GameP_05\\Class 19th (Kruskal)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -17,7 +20,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -29,20 +32,33 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Source.cpp",
+              "DocumentMoniker": "C:\\Users\\plusf\\Desktop\\GameP_05\\Class20th (Dijkstra)\\Source.cpp",
+              "RelativeDocumentMoniker": "..\\Class20th (Dijkstra)\\Source.cpp",
+              "ToolTip": "C:\\Users\\plusf\\Desktop\\GameP_05\\Class20th (Dijkstra)\\Source.cpp",
+              "RelativeToolTip": "..\\Class20th (Dijkstra)\\Source.cpp",
+              "ViewState": "AgIAAIoAAAAAAAAAAAAAAGAAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-07T09:36:47.161Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cpp",
               "DocumentMoniker": "C:\\Users\\plusf\\Desktop\\GameP_05\\Program\\Program.cpp",
               "RelativeDocumentMoniker": "Program.cpp",
               "ToolTip": "C:\\Users\\plusf\\Desktop\\GameP_05\\Program\\Program.cpp",
               "RelativeToolTip": "Program.cpp",
-              "ViewState": "AgIAAG8AAAAAAAAAAAAAAIcAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-04-07T06:21:43.164Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Source.cpp",
               "DocumentMoniker": "C:\\Users\\plusf\\Desktop\\GameP_05\\Class 19th (Kruskal)\\Source.cpp",
               "RelativeDocumentMoniker": "..\\Class 19th (Kruskal)\\Source.cpp",

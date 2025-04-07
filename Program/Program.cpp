@@ -17,6 +17,8 @@ int main()
 		유망하지 않은 노드에 가지 않는 것 (Pruning)
 
 		숙제 : DFS와 퇴각 검색 차이
+
+		Simulation
 	*/
 #pragma endregion
 
