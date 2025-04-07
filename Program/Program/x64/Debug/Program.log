@@ -1,3 +1,8 @@
 ﻿  Program.cpp
-C:\Users\plusf\Desktop\GameP_05\Program\Program.cpp(28,1): warning C4172: 지역 변수 또는 임시 의 주소를 반환하는 중
+C:\Users\plusf\Desktop\GameP_05\Program\Program.cpp(5,9): warning C4005: 'INFINITY': 매크로 재정의
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_math.h(88,9):
+      'INFINITY'의 이전 정의를 참조하십시오.
+  
+C:\Users\plusf\Desktop\GameP_05\Program\Program.cpp(55,52): warning C4804: '>': 연산에 'bool' 형식을 사용하는 것은 안전하지 않습니다.
+C:\Users\plusf\Desktop\GameP_05\Program\Program.cpp(136,1): warning C4172: 지역 변수 또는 임시 : index의 주소를 반환하는 중
   Program.vcxproj -> C:\Users\plusf\Desktop\GameP_05\Program\x64\Debug\Program.exe
